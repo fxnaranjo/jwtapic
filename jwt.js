@@ -25,12 +25,22 @@ function createJWT()
    var sec = seconds_since_epoch(today);
 
 
-var payload ={
+/* var payload ={
     "sub": "fxnaranjo",
     "realm": "cloudIdentityRealm",
     "iss": "http://169.59.188.65",
     "exp": sec,
     "aud": "https://fxn.verify.ibm.com/v1.0/endpoint/default/token",
+    "jti": jti
+  } */
+
+
+  var payload ={
+    "sub": "fxnaranjo",
+    "realm": "cloudIdentityRealm",
+    "iss": "http://169.59.188.65",
+    "exp": sec,
+    "aud": "https://verifyla.verify.ibm.com/v1.0/endpoint/default/token",
     "jti": jti
   }
   
